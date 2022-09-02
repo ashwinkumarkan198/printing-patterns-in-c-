@@ -1,0 +1,138 @@
+patterns :
+#include <iostream> ---------------------1
+
+using namespace std;
+
+int main()
+{
+    int row,col,n;
+    cin>>n;
+    
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++){
+            cout<<"*";
+        }
+        cout<<endl;
+        
+    }
+    
+
+    return 0;
+}
+
+#include <iostream>-------------------------2
+
+using namespace std;
+
+int main()
+{
+    int row,col,n;
+    cin>>n;
+    
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=n;col++){
+            cout<<"*";
+        }
+        cout<<endl;
+        
+    }
+    
+
+    return 0;
+}
+#include <iostream>-------------------------------------3
+
+using namespace std;
+
+int main()
+{
+    int row,col,n;
+    cin>>n;
+    
+    for(row=0;row<=n;row++)
+    {
+        for(col=0;col<=n-row;col++){
+            cout<<"*";
+        }
+        cout<<endl;
+        
+    }
+    
+
+    return 0;
+}
+#include <iostream>---------------------4
+
+using namespace std;
+
+int main()
+{
+    int row,col,n;
+    cin>>n;
+    
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=row;col++){
+            cout<<col<<" ";
+        }
+        cout<<endl;
+        
+    }
+    
+
+    return 0;
+}
+#include <iostream>---------------5
+
+using namespace std;
+
+int main()
+{
+    int row,col,n;
+    cin>>n;
+    
+    for(row=0;row<2*n;row++)
+    {
+        int totalcolsinrow = row>n?2*n-row:row;
+        for(col=0;col<totalcolsinrow;col++){
+            cout<<"*";
+        }
+        cout<<endl;
+        
+    }
+    
+
+    return 0;
+}
+#include <iostream>---------------------------6
+
+using namespace std;
+
+int main()
+{
+    int row,col,n;
+    cin>>n;
+    
+    for(row=0;row<2*n;row++)
+    {
+        int totalcolsinrows = row>n?2*n-row:row;
+        int spaces = n-totalcolsinrows;
+        for(int s = 0;s<spaces;s++)
+        {
+            cout<<" ";
+        }
+        for(col=0;col<totalcolsinrows;col++){
+            cout<<"* ";
+        }
+        cout<<endl;
+        
+    }
+    
+
+    return 0;
+}
+
+
+
